@@ -1,0 +1,59 @@
+// Include custom variables
+
+$primary: #46809D;
+$secondary: #254787;
+
+$theme-colors: ("primary": $primary,
+  "secondary": $secondary);
+
+@import "../bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/********** HEADER **********/
+
+.site-header {
+  .bi-cart-fill {
+    font-size: 22px;
+    color: $secondary;
+  }
+
+  .cart-customlocation {
+    color: $secondary;
+    font-weight: 500;
+  }
+
+
+
+  .aws-search-field {
+    font-size: 0.9rem;
+    padding-left: 10px;
+    border-radius: 20px !important;
+  }
+}
+
+.main-navigation {
+  font-weight: 500;
+
+  a {
+    color: #ffffff;
+    padding: 16px;
+    margin: 0 10px;
+    transition: .2s;
+
+    &:hover {
+      color: #ddd;
+    }
+  }
+
+  .menu-toggle {
+    background-color: $secondary;
+    color: #fff;
+    border: none;
+    font-size: 28px;
+  }
+}
