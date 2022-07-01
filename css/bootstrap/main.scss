@@ -10,8 +10,13 @@ $theme-colors: ("primary": $primary,
 
 // Then add additional custom code here
 
+* {
+  margin-bottom: 0 !important;
+}
+
 body {
   font-family: 'Montserrat', sans-serif !important;
+  overflow-x: hidden !important;
 }
 
 /********** HEADER **********/
@@ -25,6 +30,7 @@ body {
   .cart-customlocation {
     color: $secondary;
     font-weight: 500;
+    text-decoration: none;
   }
 
 
@@ -55,5 +61,152 @@ body {
     color: #fff;
     border: none;
     font-size: 28px;
+  }
+}
+
+/*** FRONT PAGE ***/
+
+.fp__container {
+  margin-top: 80px;
+}
+
+.fp__image {
+  box-sizing: border-box;
+
+  img {
+    padding: 25px;
+  }
+}
+
+.fp__logo {
+  box-sizing: border-box;
+
+  img {
+    padding: 25px;
+  }
+}
+
+.first__heading {
+  margin-top: 26px;
+  color: $primary;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.section__title {
+  color: $secondary;
+  font-size: 36px;
+  margin: 60px auto;
+}
+
+.popular__products {
+  box-sizing: border-box;
+  margin: 5px;
+}
+
+@media(min-width:1024px) {
+  .popular__products {
+    box-sizing: border-box;
+    margin: 100px;
+  }
+}
+
+.woocommerce-loop-product__title {
+  font-size: 20px !important;
+  color: $secondary;
+}
+
+bdi {
+  color: $secondary;
+  font-size: 20px;
+}
+
+.add_to_cart_button,
+.ajax_add_to_cart {
+  background-color: $primary !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+}
+
+.text__delivery {
+  position: relative;
+  top: 40%;
+  left: auto;
+  color: $primary;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+/*** FOOTER ***/
+
+.footer__menu,
+.footer__links {
+  ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0 10px;
+      padding: 10px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        transition: .2s;
+
+        &:hover {
+          color: #ddd;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:1024px) {
+  .footer__menu {
+    ul {
+      flex-direction: row;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.footer__links {
+  ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    width: 34px;
+    color: #fff;
+    margin: 0 30px;
+    padding: 10px;
+    transition: .2s;
+
+    &:hover {
+      color: #ddd;
+    }
+
+    i {
+      font-size: 30px;
+    }
   }
 }

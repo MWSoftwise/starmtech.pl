@@ -50,6 +50,7 @@ function starmtech_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'starmtech' ),
+			'menu-2' => esc_html__( 'Secondary', 'starmtech' ),
 		)
 	);
 
