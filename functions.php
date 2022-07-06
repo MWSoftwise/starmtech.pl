@@ -207,3 +207,27 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	$fragments['a.cart-customlocation'] = ob_get_clean();
 	return $fragments;
 }
+
+
+// **** WOOCOMMERCE ****//
+
+add_theme_support('woocommerce');
+
+function remove_woocommerce_styles($enqueue_styles) {
+	// unset($enqueue_styles['woocommerce_general']);
+	return $enqueue_styles;
+}
+
+add_filter('woocommerce_enqueue_styles','remove_woocommerce_styles');
+
+function wp_enqueue_woocommerce_style() {
+	wp_register_style('starmtech-woocommerce', get_template_directory_uri() . '/dist/woocommerce.min.css');
+
+	if(class_exists('woocommerce')){
+		wp_enqueue_style('starmtech-woocommerce');
+	}
+}
+
+add_action('wp_enqueue_scripts', 'wp_enqueue_woocommerce_style');
+
+add_filter('woocommerce_show_page_title' , '__return_false');

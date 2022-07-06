@@ -17,7 +17,7 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<div class="container p-5">
+		<div class="container theme__page">
 			<?php
 			while ( have_posts() ) :
 				the_post();

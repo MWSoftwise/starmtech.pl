@@ -94,7 +94,7 @@ body {
 }
 
 .section__title {
-  color: $secondary;
+  color: $primary !important;
   font-size: 36px;
   margin: 60px auto;
 }
@@ -209,4 +209,148 @@ bdi {
       font-size: 30px;
     }
   }
+}
+
+/*****PAGE******/
+
+.theme__page{
+  min-height: 57vh;
+  padding: 5%;
+}
+
+//*****WOOCOMMERCE*****//
+
+.single_add_to_cart_button{
+  background-color: $primary !important;
+  font-weight: 400;
+}
+
+.entry-summary>*{
+  padding: 10px 0;
+}
+
+.entry-summary bdi{
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.entry-title{
+  color: $secondary;
+}
+
+.description_tab{
+  background-color: #fff;
+  font-weight: 400;
+}
+
+.description_tab.active{
+  font-weight: 500;
+}
+
+.tabs, .wc-tabs{
+  padding-top: 50px !important;
+}
+
+.woocommerce-result-count{
+  padding-bottom: 40px;
+  color: $primary;
+}
+
+.orderby{
+  color: $primary;
+  border: none;
+  background-color: #fff;
+}
+.woocommerce-MyAccount-navigation{
+  ul{
+    list-style: none;
+
+    li{
+
+      a{
+        text-decoration: none;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.woocommerce-form{
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+
+    label,p{
+      color: $secondary;
+    }
+}
+
+.woocommerce-form-register__submit, .woocommerce-form-login__submit{
+      color: #fff !important;
+      background-color: $primary !important;
+      font-weight: 400 !important;
+}
+
+#customer_details {
+  padding-bottom: 30px;
+
+  h3,label{
+    color: $secondary;
+  }
+}
+
+.woocommerce-checkout-review-order-table, #order_review_heading{
+  color: $secondary;
+}
+
+#place_order{
+  background-color: $primary;
+  color: #fff;
+  font-weight: 400;
+}
+
+.wc-block-product-categories-list{
+  list-style: none;
+  display: flex;
+
+  li{
+
+    span{
+      display: none;
+    }
+
+    a{
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 15px;
+      padding: 5px;
+    }
+  }
+}
+
+.wc-backward{
+  background-color: $primary !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+}
+
+#post-42{
+  color: $secondary;
+}
+
+#wpforms-form-57{
+
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+
+  padding: 30px;
+  margin-top: 50px;
+
+}
+
+#wpforms-submit-57{
+  background-color: $primary;
+  color: #fff;
 }

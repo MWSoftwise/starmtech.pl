@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="bg-primary text-white pt-5 pb-5">
+		<div class="bg-secondary text-white pt-5 pb-5">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 d-flex justify-content-center footer__menu">
